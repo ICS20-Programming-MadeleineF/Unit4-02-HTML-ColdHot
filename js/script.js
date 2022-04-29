@@ -6,7 +6,7 @@
 
 'use strict'
 /**
- * This function calculates random number.
+ * This function calculates if temp is hot or cold.
  */
 function tempHotOrCold() {
    	// initialize variables
@@ -15,11 +15,11 @@ function tempHotOrCold() {
 	let guess = parseFloat(document.getElementById('guess').value)
 
 
-  	// if guess is right says correct
+  	// if guess equal or less then 9 it is cold
 	if (guess <= 9){
 		temperature = "It's cold Brrr"
 	} 
-	//if not says incorrect	
+	//if more then 9 it is hot	
 	else {
 		temperature = "IT'S HOT"
 	}
