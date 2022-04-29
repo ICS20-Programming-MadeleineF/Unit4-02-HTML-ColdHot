@@ -8,39 +8,22 @@
 /**
  * This function calculates random number.
  */
-function makeRandomNumber() {
+function tempHotOrCold() {
    	// initialize variables
-	let temperature = ""
-	
+	let temperature = ""	
 	// get user input
-	let guess = parseInt(document.getElementById('guess').value)
-  let randomNumber = Math.floor(Math.random() * 6) + 1
+	let guess = parseFloat(document.getElementById('guess').value)
 
 
   	// if guess is right says correct
-	if (guess == randomNumber){
-		number = "CORRECT!!!   " + randomNumber + '  is the right number'
+	if (guess <= 9){
+		temperature = "It's cold Brrr"
 	} 
 	//if not says incorrect	
 	else {
-		number = "INCORRECT " + '  The correct number is ' + randomNumber + '.'
+		temperature = "IT'S HOT"
 	}
 
   // display the results
-  document.getElementById('number').innerHTML = number
+  document.getElementById('temperature').innerHTML = temperature
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-+
